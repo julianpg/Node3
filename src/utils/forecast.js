@@ -15,7 +15,7 @@ const forecast = (latitude,longitude,callback)=>{
 
         } else {
             
-            callback(undefined,body.daily.data[0].summary)
+            callback(undefined,body.daily.data[0].summary +' Todays high is '+ body.daily.data[0].temperatureHigh + ' and the low will be '+body.daily.data[0].temperatureLow )
 
         }
        
